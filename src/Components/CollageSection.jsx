@@ -73,7 +73,7 @@ export default function CollageSection() {
         </TextDiv>
         <CarousellDiv>
           {carousell.map((data, idx) => (
-            <CarousellChild>
+            <CarousellChild key={idx}>
               <div style={{ backgroundImage: `url(${data.image})` }}></div>
               <div>
                 <p>{data.text}</p>
